@@ -1,0 +1,13 @@
+# Gradle build and cache
+.gradle/
+build/
+
+# IDE / Editor files
+.idea/
+*.iml
+.vscode/
+bin/
+.freebuff/
+
+# Minecraft run directory (test logs, caches)
+run/

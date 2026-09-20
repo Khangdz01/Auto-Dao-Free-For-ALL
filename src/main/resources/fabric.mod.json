@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "autodao",
+  "version": "1.0.0",
+  "name": "Khangdzlaanh",
+  "description": "AutoDao Mod by Perfidanb. Clears blocks efficiently with smart auto-mining, pathfinding, and protection features.",
+  "authors": [
+    "Perfidanb"
+  ],
+  "contact": {},
+  "license": "Perfidanb - All Rights Reserved",
+  "icon": "assets/automine/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.automine.AutoMineClient",
+      "com.automine.modules.AutoMineExtraClient"
+    ],
+    "modmenu": [
+      "com.automine.core.AutoMineModMenu"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "automine.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "minecraft": ">=1.21",
+    "java": ">=21"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
